@@ -1,17 +1,24 @@
-# Compiler-Construction Project 1
-A lexical parser to generate token for a defined language construct
+# Artificial Intelligence Techniques
 
-
-
-Run using
 ```sh
-cd Compiler Project
-gcc lexer.c main.c -o a
-a testcase1.txt
 ```
 
-## Team Members
-- Soumil Agrawal
-- Giridhar Bajpai
-- Raunak Mantri
-- Anuj Kharbanda
+# Authors
+1) Raunak Mantri - 2017B5A71340H
+2) Adesh Pradhan - 2017B3A70960H
+3) Ameetesh Sharma - 2018A7SP0167H
+
+# Expert System for International Journals
+After taking preferences from the user we are searching for relevant results using RULES and
+vector space model for keyword matching
+Retrieve results in 2secs and shows the Impact factor, Scope, Coverage and Title for the journals.
+
+# Bayesian Network
+A bayesian network is created for monitoring the speed of vehicles inside BITS Campus. Six
+boolean attributes are used-
+1) Personnel
+2) See_personnel
+3) On Time
+4) Fine Chit
+5) Slow Traffic
+6) Speed
