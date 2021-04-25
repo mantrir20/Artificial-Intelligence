@@ -1,0 +1,30 @@
+body{
+    text-align:  center;
+    padding-top: 20px;
+    display: block;
+    margin-top: 12%;
+
+}
+h1 {
+    align-content: center;
+    color: #0f4c75;
+    font-size: 45px;
+}
+.tab_search{
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 10px;
+    border-color: #0f4c75;
+    color: #1b262c;
+    width: 350px;
+    height: 25px;
+}
+.button_search{
+    border-radius: 10px;
+    background-color: #0f4c75;
+    color: #bbe1fa;
+    padding : 5px 10px;
+    border : none;
+    height: 37px;
+}

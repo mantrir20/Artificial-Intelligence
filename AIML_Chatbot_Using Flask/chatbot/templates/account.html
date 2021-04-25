@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="content-section">
+    <form method="POST" action="">
+        {{ button_map.hidden_tag() }}
+            <div class="form-group">
+                {{ button_map.submit(class="btn btn-outline-info") }}
+            </div>
+    </form>
+</div>
+
+<main role="main" class="container">
+    <div class="row">
+            <div class="col-md-10">
+                <div class="content-section">
+                <h3>Hey {{ current_user.username }} !</h3>
+                <p class='text-muted'>Your account information is as follows
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-light">Email : {{ current_user.email }}</li>
+                        <li class="list-group-item list-group-item-light">Age (in years) : {{ current_user.age }}</li>
+                        <li class="list-group-item list-group-item-light">Address : {{ current_user.address }}</li>
+                        <li class="list-group-item list-group-item-light">Phone number : {{ current_user.phone }}</li>
+                        <li class="list-group-item list-group-item-light">Blood Group : {{ current_user.blood_group }}</li>
+                        <li class="list-group-item list-group-item-light">Guardian Name : {{ current_user.guardian }}</li>
+                        <li class="list-group-item list-group-item-light">Blood Relation : {{ current_user.blood_relation }}</li>
+                    </ul>
+                </p>
+                </div>
+        </div>
+    </div>
+</main>
+
+
+<main role="main" class="container">
+    <div class="row">
+            <div class="col-md-10">
+                <div class="content-section">
+                <p class='text-muted'>Emergency Contact Numbers
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-light">Police : 100</li>
+                        <li class="list-group-item list-group-item-light">Fire : 101</li>
+                        <li class="list-group-item list-group-item-light">Ambulance : 102</li>
+                        <li class="list-group-item list-group-item-light">Railway Enquiry : 139</li>
+                    </ul>
+                </p>
+                </div>
+        </div>
+    </div>
+</main>
+{% endblock content %}
+

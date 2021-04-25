@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Personnel">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.8 0.2</probabilities>
+		</cpt>
+		<cpt id="See_Personnel">
+			<state id="True" />
+			<state id="False" />
+			<parents>Personnel</parents>
+			<probabilities>0.7 0.3 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Slow_Traffic">
+			<state id="True" />
+			<state id="False" />
+			<parents>Personnel</parents>
+			<probabilities>0.6 0.4 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Speed">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Fine_Chit">
+			<state id="True" />
+			<state id="False" />
+			<parents>Personnel Speed</parents>
+			<probabilities>0.4 0.6 0.2 0.8 0.2 0.8 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="On_Time">
+			<state id="True" />
+			<state id="False" />
+			<parents>Fine_Chit Speed Slow_Traffic</parents>
+			<probabilities>0.1 0.9 0.1 0.9 0.1 0.9 0.1 0.9 0.7 0.3 0.7 0.3 0.3 0.7 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 3.0.6128.0 ACADEMIC" name="Assignment_2_q2">
+			<comment>Authors-\n\n1) Raunak Mantri\n2 )Adesh Pradhan\n3) Ameetesh Sharma\n\nBaysian Network for BITS Hyderabad vehical Speed testing</comment>
+			<node id="Personnel">
+				<name>Personnel</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>332 23 425 74</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="See_Personnel">
+				<name>See_Personnel</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>90 214 186 282</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Slow_Traffic">
+				<name>Slow Traffic</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>289 260 389 323</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Speed">
+				<name>Speed</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>647 20 728 69</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Fine_Chit">
+				<name>Fine Chit</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>499 224 590 278</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="On_Time">
+				<name>On Time</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>785 384 897 463</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

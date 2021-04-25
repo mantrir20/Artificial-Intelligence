@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>search</title>
+	<!--<link rel="stylesheet" href="C:\Users\prana\Desktop\FlaskT\static\master.css">-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='master.css') }}">
+</head>
+<body>
+	<h1>Journal Search</h1>
+	<form action="/results" method="POST">
+		<select name="subj" class="tab_search">
+			<option value="All">Select all Research Areas</option>
+			<option value="Agricultural and Biological Sciences">Agricultural and Biological Sciences</option>
+			<option value="Arts and Humanities">Arts and Humanities</option>
+			<option value="Biochemistry, Genetics and Molecular Biology">Biochemistry, Genetics and Molecular Biology</option>
+			<option value="Business, Management and Accounting">Business, Management and Accounting</option>
+			<option value="Chemical Engineering">Chemical Engineering</option>
+			<option value="Chemistry">Chemistry</option>
+			<option value="Computer Science">Computer Science</option>
+			<option value="Decision Sciences">Decision Sciences</option>
+			<option value="Dentistry">Dentistry</option>
+			<option value="Earth and Planetary Sciences">Earth and Planetary Sciences</option>
+			<option value="Economics, Econometrics and Finance">Economics, Econometrics and Finance</option>
+			<option value="Energy">Energy</option>
+			<option value="Engineering">Engineering</option>
+			<option value="Environmental Science">Environmental Science</option>
+			<option value="Health Professions">Health Professions</option>
+			<option value="Immunology and Microbiology">Immunology and Microbiology</option>
+			<option value="Medicine">Medicine</option>
+			<option value="Multidisciplinary">Multidisciplinary</option>
+			<option value="dog">Neuroscience</option>
+			<option value="Nursing">Nursing</option>
+			<option value="Pharmacology, Toxicology and Pharmaceutics">Pharmacology, Toxicology and Pharmaceutics</option>
+			<option value="Physics and Astronomy">Physics and Astronomy</option>
+			<option value="Psychology">Psychology</option>
+			<option value="Social Sciences">Social Sciences</option>
+			<option value="Veterinary">Veterinary</option>
+		</select>
+		<br>
+		<input name="keyw" placeholder="keywords" type="text" class="tab_search">
+		<br>
+		<input name="i_fact" placeholder="Impact Factor should be greater than" type="text" class="tab_search">
+		<br>
+		<input name="publ" placeholder="publisher" type="text" class="tab_search">
+		<br>
+		<!--<input type="submit" name="search" class="button_search">-->
+		<button type="submit" name="serach" class="button_search">Search</button>
+	</form>
+</body>
+</html>

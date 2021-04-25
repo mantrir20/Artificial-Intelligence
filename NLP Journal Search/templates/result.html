@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+	<!--<link rel="stylesheet" href="C:\Users\prana\Desktop\FlaskT\static\styles.css">-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+	<p class="query_res">
+		{{q}}
+	</p>
+	{% for r in res %}
+     	<p style="font-size: 20px; font-style: italic;" class="res"><a href={{r[1]}}>{{ r[0] }}</a></p>
+		 <p>Impact Factor: {{r[3]}}</p>
+		 <p>Coverage: {{r[4]}}</p>
+		 <p>Scope : {{r[2]}} </p>
+		 <br>
+    {% endfor %}
+</body>
+</html>
